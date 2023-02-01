@@ -48,6 +48,17 @@
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kategori
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active"  href="#">UI UX</a></li>
+                  <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -59,13 +70,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="asset/img/kamera.jpg" class="d-block w-100" alt="...">
+            <img src="asset/img/serangga.jpg" class="d-block w-100 " alt="...">
           </div>
           <div class="carousel-item">
             <img src="asset/img/poppy.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="asset/img/vegan.jpg" class="d-block w-100" alt="...">
+            <img src="asset/img/rekreasi.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -174,6 +185,35 @@
       </div>
     </div>
     <!-- End Progress -->
+    <!-- Modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Komentar</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- End Modal -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
